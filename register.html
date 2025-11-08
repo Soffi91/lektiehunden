@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -19,11 +19,11 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> LEKTIE-HUNDEN </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li><a class="menuItem" href="instruction.html">Gode råd </a></li>
+          <li><a class="menuItem" href="register.html">Skriv ind</a></li>
         </ul>
         <button class="burger">
           <span class="line"></span>
@@ -34,40 +34,61 @@
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>HAR DU OPLEVET DET SAMME?</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>SKRIV IND!</h2>
+          <p class="tekst">
+            Har du prøvet at din hund spiste dine lektier? Indsend gerne dine
+            bedste råd og oplevelser.
+          </p>
         </article>
         <form id="webform">
-          <label for="first">First name</label>
-          <input type="text" id="first" name="first" />
-          <p>Please enter a value</p>
+          <div class="form-group">
+            <label for="navn">Navn</label>
+            <input type="text" id="navn" name="navn" required />
+            <p class="error-message">Udfyld venligst dette felt</p>
+          </div>
 
-          <label for="last">Last name</label>
-          <input type="text" id="last" name="last" />
-          <p>Please enter a value</p>
+          <div class="person">
+            <label for="alder">Fødselsdato</label>
+            <input type="date" id="alder" name="alder" required />
+            <p class="error-message">Udfyld venligst dette felt</p>
+          </div>
 
-          <label for="mail">Email</label>
-          <input type="email" id="mail" name="mail" />
-          <p>Please enter a value</p>
+          <div class="person">
+            <label for="gender">Køn</label>
+            <select id="gender" name="gender" required>
+              <option value="">--</option>
+              <option value="Dreng">Dreng</option>
+              <option value="Pige">Pige</option>
+              <option value="Andet">Ønsker ikke at oplyse</option>
+            </select>
+            <p class="error-message">Udfyld venligst dette felt</p>
+          </div>
 
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" />
-          <p>Please enter a value</p>
-
-          <label for="terms"
-            >Accept terms <input type="checkbox" id="terms" name="terms"
-          /></label>
-
-          <button>Sign up</button>
+          <div class="form-group">
+            <label for="a">Besked</label>
+            <textarea
+              name="besked"
+              id="a"
+              rows="12"
+              placeholder="Skriv din besked her..."
+              required
+            ></textarea>
+          </div>
+          <button>Send →</button>
         </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <div>
+            <p>Navn: <span id="navn_output"></span></p>
+            <p>Fødselsdato: <span id="alder_output"></span></p>
+            <p>Køn: <span id="gender_output"></span></p>
+            <p>Din besked: <span id="besked_output"></span></p>
+          </div>
         </article>
       </section>
     </main>
@@ -98,6 +119,6 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/register.js"></script>
   </body>
 </html>
