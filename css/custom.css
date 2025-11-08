@@ -8,7 +8,7 @@
   /* Logotype */
   --color-logotype-bg: #000;
   --color-text-logotype: #fffae2;
-  --font-logotype-size: 2rem;
+  --font-logotype-size: 3rem;
 
   /* Global menu */
   --color-menu-bg: #6f90eb;
@@ -22,7 +22,7 @@
   --font-h1-size: 48px;
   --font-sub1-size: 1rem;
   --font-h2-size: 36px;
-  --font-h3-size: 1rem;
+  --font-h3-size: 36px;
   --color-headline-bg: #000;
   --color-headline-text-page: #fffae2;
 
