@@ -33,6 +33,10 @@ svg {
   height: auto;
 }
 
+.megafon {
+  width: 120px;
+}
+
 label {
   display: block;
 }

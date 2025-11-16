@@ -61,7 +61,7 @@
   font-weight: var(--font-weight-medium);
   text-align: center;
   line-height: 1rem;
-  padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 0;
+  padding: calc(2rem / 1.5) 0 calc(2rem / 2) 0;
 }
 .news_card:first-child {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -72,6 +72,7 @@
 
 .news_card .cta_btn {
   justify-self: center;
+  border: none;
 }
 .cta_btn {
   display: inline-block;
@@ -92,4 +93,69 @@
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+[popover] {
+  padding: 1rem;
+  margin: auto;
+  scrollbar-width: none;
+  opacity: 0;
+  transition: 0.3s allow-discrete;
+
+  button {
+    position: sticky;
+    top: 0;
+    justify-self: end;
+    background-color: #6f90eb;
+    color: #fffae2;
+    border: none;
+    padding: 0;
+    font-weight: bold;
+  }
+
+  &:popover-open {
+    display: grid;
+  }
+
+  &::backdrop {
+    background: #0008;
+  }
+}
+
+[popover] {
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+}
+:popover-open {
+  opacity: 1;
+}
+@starting-style {
+  :popover-open {
+    opacity: 0;
+  }
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+  margin-top: 1.5em;
+}
+
+.overskrift_cards {
+  color: #fffae2;
+  background-color: var(--color-head-bg);
+  font-size: larger;
+  margin: 0;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding: 15px 30px 15px 46px;
+  /* Valgfrit: hvis du vil have lidt ekstra top/bundmellemrum */
+  margin-top: 2.5px;
+  margin-bottom: 10px;
+}
+h6 {
+  font-size: 1em;
+  font-weight: bold;
 }
