@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/toggle.css" />
+
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -24,6 +26,10 @@
           <li><a class="menuItem" href="instruction.html">Gode råd </a></li>
           <li><a class="menuItem" href="register.html">Skriv ind</a></li>
         </ul>
+        <label class="switch">
+          <input type="checkbox" id="toggle" />
+          <span class="slider"></span>
+        </label>
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -43,14 +49,14 @@
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="img/hunden2.webp" alt="teaser_img" />
+          <img class="hunden" src="img/hunden.svg" alt="teaser_img" />
           <div class="daily_text">
             <h2>FÅ HJÆLP</h2>
             <p>
               Få inspiration til gode undskylninger og mulige resultater, samt
               hvilken effekt de kan have ...
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="instruction.html" class="cta_btn">Se mere</a>
           </div>
         </article>
         <article class="daily_card">
@@ -61,7 +67,7 @@
               Skriv endelig ind med alle dine tidligere erfaringer af gode råd
               og hjælp andre!
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="register.html" class="cta_btn">Se mere</a>
           </div>
         </article>
       </section>
@@ -70,7 +76,7 @@
           <h3>Hunden på fri fod</h3>
           <p>
             Flere danskere melder ind at de har set lektie-hunden rende rundt i
-            gaderne...
+            gaderne.
           </p>
           <img src="img/gadebilledet.webp" alt="lektie-hunden i gadebilledet" />
           <button popovertarget="news_popover1" class="cta_btn">
@@ -254,6 +260,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/darkmode.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
