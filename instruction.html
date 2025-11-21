@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/infographic.css" />
+    <link rel="stylesheet" href="css/toggle.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -25,6 +26,10 @@
           <li><a class="menuItem" href="instruction.html">Gode råd </a></li>
           <li><a class="menuItem" href="register.html">Skriv ind</a></li>
         </ul>
+        <label class="switch">
+          <input type="checkbox" id="toggle" />
+          <span class="slider"></span>
+        </label>
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -34,8 +39,8 @@
     </header>
 
     <main>
-      <h1>INSTRUKTION</h1>
-      <p>Underoverskrift</p>
+      <h1>RAMT AF LEKTIE-HUNDEN?</h1>
+      <p>VÆLG EN AF DE TRE NEDENSTÅENDE STRATEGIER</p>
 
       <section class="info-graphic">
         <svg
@@ -384,12 +389,12 @@
         </svg>
       </section>
       <section class="info-text">
-        <h2>Overskrift</h2>
+        <h2>MULIGHED</h2>
         <article>
           <p class="placeholder">INFO-TEKST</p>
         </article>
-        <aside id="efficiency" class="info-box">INFO-BOX</aside>
-        <aside id="requirement" class="info-box">INFO-BOX</aside>
+        <aside id="efficiency" class="info-box">...</aside>
+        <aside id="requirement" class="info-box">...</aside>
       </section>
     </main>
 
@@ -421,5 +426,6 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/darkmode.js"></script>
   </body>
 </html>

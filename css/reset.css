@@ -37,8 +37,14 @@ svg {
   width: 120px;
 }
 
+.hunden {
+  width: 120px;
+  margin-left: 4em;
+}
+
 label {
   display: block;
+  color: var(--color-text-forms);
 }
 
 input,
@@ -70,6 +76,7 @@ legend {
 select,
 ::picker(select) {
   appearance: base-select;
+  color: var(--color-text-forms);
 }
 
 .visually-hidden {

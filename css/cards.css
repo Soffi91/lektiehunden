@@ -14,7 +14,7 @@
 }
 .daily_text h2 {
   background-color: var(--color-headline-bg);
-  color: var(--color-text-inverted);
+  color: var(--color-headline-text-page);
   padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 1rem;
   margin: 0 0 0.5rem 0;
   font-size: var(--font-h2-size);
@@ -22,6 +22,7 @@
 .daily_text p {
   padding-right: 2rem;
   margin: 0 0 1rem 0;
+  color: var(--color-text-card);
 }
 .daily_text .cta_btn {
   justify-self: left;
@@ -49,9 +50,11 @@
 }
 .news_card h3 {
   margin: 0.5rem 0 0 0;
+  color: var(--color-text-card);
 }
 .news_card p {
   margin: 0 0 1rem 0;
+  color: var(--color-text-card);
 }
 .news_card:first-child:before {
   content: "BREAKING NEWS";
@@ -85,10 +88,11 @@
 }
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);
+  color: var(--color-text-card);
 }
 .news_card:nth-of-type(2n) .cta_btn {
   background-color: var(--color-cta-newscard-bg-inverted);
-  color: var(--color-text);
+  color: var(--color-text-card);
 }
 .cta_btn:after {
   content: "\2192";
@@ -98,7 +102,7 @@
 [popover] {
   padding: 1rem;
   margin: auto;
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
   opacity: 0;
   transition: 0.3s allow-discrete;
 
@@ -106,8 +110,8 @@
     position: sticky;
     top: 0;
     justify-self: end;
-    background-color: #6f90eb;
-    color: #fffae2;
+    background-color: var(--color-menu-bg);
+    color: var(--color-link-bg);
     border: none;
     padding: 0;
     font-weight: bold;
@@ -144,7 +148,7 @@
 }
 
 .overskrift_cards {
-  color: #fffae2;
+  color: var(--color-link-bg);
   background-color: var(--color-head-bg);
   font-size: larger;
   margin: 0;

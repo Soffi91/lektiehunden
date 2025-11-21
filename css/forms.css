@@ -11,7 +11,7 @@
   line-height: 3rem;
   text-align: center;
   background-color: var(--headline-bg-color-inverted);
-  color: var(--headline-color-inverted);
+  color: var(--color-text-forms);
   padding-top: 5px;
 }
 #form-summary h3 {
@@ -31,8 +31,13 @@
   padding: 0;
 }
 
+p {
+  color: var(--color-text-forms);
+}
+
 input {
-  background-color: #dbe2f5;
+  background-color: var(--color-info-forms);
+  color: var(--color-text-forms);
   border: 1px solid #ccc;
   padding: 0.25rlh;
   border-radius: 6px;
@@ -40,16 +45,17 @@ input {
 }
 
 textarea {
-  background-color: #dbe2f5;
+  background-color: var(--color-info-forms);
+  color: var(--color-text-forms);
   border: 1px solid #ccc;
   padding: 0.25rlh;
   border-radius: 6px;
   box-shadow: 0px 1px 2px #0001;
 }
 
-button {
+#send {
   border: none;
-  background-color: #ff4b00;
+  background-color: var(--color-head-bg);
   color: #fff;
   cursor: pointer;
 }
@@ -61,7 +67,7 @@ form button {
 }
 
 .error-message {
-  color: darkred;
+  color: var(--color-text-error);
 }
 
 form {
@@ -154,6 +160,6 @@ button:active {
 }
 
 textarea::placeholder {
-  color: #777; /* grå farve */
+  color: var(--color-text-placeholder); /* grå farve */
   font-style: italic; /* kursiv tekst */
 }

@@ -1,6 +1,8 @@
 :root {
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  color-scheme: light;
+
+  --color-bg: light-dark(#fceb94, #707070); /* page background /*
 
   /* Header */
   --color-head-bg: #ff4b00;
@@ -21,10 +23,10 @@
   /* Headlines og rubrik */
   --font-h1-size: 48px;
   --font-sub1-size: 2rem;
-  --font-h2-size: 28px;
-  --font-h3-size: 28px;
-  --color-headline-bg: #000;
-  --color-headline-text-page: #fffae2;
+  --font-h2-size: 30px;
+  --font-h3-size: 30px;
+  --color-headline-bg: light-dark(#000, #fffae2);
+  --color-headline-text-page: light-dark(#fffae2, #272727);
 
   /* Tekst */
   --color-text: #000;
@@ -37,13 +39,14 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #ffffff;
+  --color-card-bg: light-dark(#ffffff, #272727);
   --color-cta-card-bg: #ff4b00;
   /* news-cards */
-  --color-news-bg: #fffae2;
-  --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg: #ffa680;
-  --color-cta-newscard-bg-inverted: #6f90eb;
+  --color-news-bg: light-dark(#fffae2, #494949);
+  --color-news-bg-inverted: light-dark(#dbe2f5, #272727);
+  --color-text-card: light-dark(#000, #fffae2);
+  --color-cta-newscard-bg: light-dark(#ffa680, #8f6655);
+  --color-cta-newscard-bg-inverted: light-dark(#6f90eb, #3f4860);
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -55,7 +58,7 @@
   /* Text sizes */
   --logotype-size: 1rem;
   --headline1-size: 2rem;
-  --headline2-size: 1rem;
+  --headline2-size: 1.5rem;
   --headline3-size: 2rem;
   --bodytext-size: 1rem;
   --cta-text-size: 1rem;
@@ -63,7 +66,17 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #fff;
-  --color-infobox-1-bg: #fceb94;
-  --color-infobox-2-bg: #def5eb;
+  --color-info-bg: light-dark(#fff, #272727);
+  --color-infobox-1-bg: light-dark(#fff, #777153);
+  --color-infobox-2-bg: light-dark(#fff, #586556);
+
+  /* Forms */
+
+  --color-info-forms: light-dark(#dbe2f5, #707070);
+  --color-text-forms: light-dark(#000, #fffae2);
+  --color-text-placeholder: light-dark(#777, #b1aea0);
+  --color-text-error: light-dark(#8b0000, #a73939);
+}
+:root.dark {
+  color-scheme: dark;
 }
